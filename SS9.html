@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrs = prompt("Nhập mảng ký tự");
+    let c = arrs.split(" ");
+    let x = prompt("Nhập ký tự bất kì");
+    let a = 0;
+
+    function check() {
+        for (let i = 0; i < c.length; i++) {
+            if (c[i] === x) {
+                a += 1;
+            }
+        }
+        if (a === 0) {
+            return -1;
+        } else {
+            return "Số lần xuất hiện của "+x +"là "+ a;
+        }
+    }
+    document.write(check());
+</script>
+</body>
+</html>

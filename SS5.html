@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function integers (numbers){
+        let s = 0;
+        for (let i=0;i<numbers.length;i++){
+            if(numbers[i]<s){
+                return "số nhỏ nhất là"+ numbers[i];
+            }
+        }
+        return "số nhỏ nhất là"+ s;
+    }
+    let numbers = prompt("Nhập 3 số nguyên");
+    let x =numbers.split(" ");
+    document.write(integers(x));
+</script>
+</body>
+</html>
